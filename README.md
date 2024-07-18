@@ -34,15 +34,12 @@
 
 ### Cron:
 ### Add one of following line in cron file:
-  ### */2 * * * *  /opt/local/etc/aliyun/alidns.sh -v >> /tmp/alidns.log
-  ### */2 * * * *  /opt/local/etc/aliyun/alidns.sh -v >> /dev/null
-  ### */2 * * * *  /opt/local/etc/aliyun/alidns.sh
-
-
+   */10 * * * *  /opt/local/etc/aliyun/alidns.sh -v >> /tmp/alidns.log
+   */10 * * * *  /opt/local/etc/aliyun/alidns.sh -v >> /dev/null
+   */10 * * * *  /opt/local/etc/aliyun/alidns.sh
 
 
 ### Back Info
-
 In case of CTCC ISP, config the home modem running in the bridge mode, and Wan interface of OpenWrt/23.05 route in PPPoE mode,
 A PD_PREFIX/56 IPv6 set will be available in the home route.
 
