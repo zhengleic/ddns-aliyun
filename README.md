@@ -30,7 +30,7 @@
 
 # Note 
   # curl must be installed
-
+  # To access route in cron, ssh key must be configed 
 
 # Cron:
   # Add one of following line in cron file:
