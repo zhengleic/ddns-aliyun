@@ -8,35 +8,35 @@
 
 
 # Code Example:
-  Set_DNS_IP ${KEY} ${SECRET} ${DOMAIN} ${T4} ${RR}  ${IP4}
-  Set_DNS_IP ${KEY} ${SECRET} ${DOMAIN} ${T6} ${RR}  ${IP6}
+  # Set_DNS_IP ${KEY} ${SECRET} ${DOMAIN} ${T4} ${RR}  ${IP4}
+  # Set_DNS_IP ${KEY} ${SECRET} ${DOMAIN} ${T6} ${RR}  ${IP6}
 
-  Get_DNS_IP ${KEY} ${SECRET} ${DOMAIN} ${T4} ${RR}
-  Get_DNS_IP ${KEY} ${SECRET} ${DOMAIN} ${T6} ${RR}
+  # Get_DNS_IP ${KEY} ${SECRET} ${DOMAIN} ${T4} ${RR}
+  # Get_DNS_IP ${KEY} ${SECRET} ${DOMAIN} ${T6} ${RR}
   
-  Here:
-  KEY       = AccessKeyId of Aliyun
-  SECRET    = AccessKeySecret of Aliyun
-  DOMAIN    = Your domain,  say: aliyun.net
-  RR        = 3rd level domain name,  say:  www
-  IP4       = IPv4 value
-  IP6       = IPv6 value
+# Here:
+  # KEY       = AccessKeyId of Aliyun
+  # SECRET    = AccessKeySecret of Aliyun
+  # DOMAIN    = Your domain,  say: aliyun.net
+  # RR        = 3rd level domain name,  say:  www
+  # IP4       = IPv4 value
+  # IP6       = IPv6 value
 
   
 # Install
-  ### Download alidns.sh, alidns_util.sh
-  ### And copy to anywhere of your server
-  ### say:  /opt/local/etc/aliyun
+  # Download alidns.sh, alidns_util.sh
+  # And copy to anywhere of your server
+  # say:  /opt/local/etc/aliyun
 
 # Note 
   # curl must be installed
 
 
-### Cron:
-### Add one of following line in cron file:
-   */10 * * * *  /opt/local/etc/aliyun/alidns.sh -v >> /tmp/alidns.log
-   */10 * * * *  /opt/local/etc/aliyun/alidns.sh -v >> /dev/null
-   */10 * * * *  /opt/local/etc/aliyun/alidns.sh
+# Cron:
+  # Add one of following line in cron file:
+   #  */10 * * * *  /opt/local/etc/aliyun/alidns.sh -v >> /tmp/alidns.log
+   #  */10 * * * *  /opt/local/etc/aliyun/alidns.sh -v >> /dev/null
+   #  */10 * * * *  /opt/local/etc/aliyun/alidns.sh
 
 
 ### Back Info
